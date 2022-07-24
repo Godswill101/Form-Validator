@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    <div class="info" id="info" onclick="hideButton(this)">
+        <h1>
+            <i class="fas fa-info-circle"></i>
+            We use cookies to improve your experience using this site.
+            <a href="#">More Info</a>
+        </h1>
+    
+        <button class="button">Accept</button>
+        <!-- <button disabled="disabled">Decline</button> -->
+    </div>
+    
+    <div class="signup-text">
+        <h2>Sign Up</h2>
+        <h5>Fill The Form Below To Create An Account</h5>
+    </div>
+    
+    <div class="form-field">
+        <div class="container">
+            <form action="#" id="form" class="form ">
+                <div>
+                    <a href="#" class="btn"><i class="fab fa-google"> Sign Up With Google</i></a>
+                    <a href="https://github.com" class="btn"><i class="fab fa-github"> Sign Up With GitHub</i></a>
+                </div>
+
+                <h2><i class="fas fa-arrow-circle-up"></i> or <i class="fas fa-arrow-circle-down"></i></h2>
+
+                <div class="form-control">
+                    <i class="fas fa-person"></i>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Godswill101">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>error message</small>
+                </div>
+
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="godswill101@gmail.com">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>error message</small>
+                </div>
+
+                <div class="form-control">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="password" placeholder="Create A Password">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    
+                    <!-- <i class="fa fa-eye"></i> -->
+                    <i class="fa fa-eye-slash showHidePw"></i>
+                    <small>error message</small>
+                </div>
+
+                <div class="form-control">
+                    <label for="password2">Confirm Password</label>
+                    <input type="password" id="confirm password" class="password" placeholder="Confirm Password">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+
+                    <!-- <i class="fa fa-eye"></i> -->
+                    <i class="fa fa-eye-slash showHidePw"></i>
+                    <small>error message</small>
+                </div>
+
+                <button type="submit">Sign Up</button>
+    
+                <h3>
+                    <input type="checkbox" id="check-box" class="check-box"> 
+                    By signing up, you agree to Our Terms of Use, Privacy Policy and Cookie Policy.
+                </h3>
+                <h4>Already have an account? <a href="#"> Login Here</a></h4>
+            </form>
+            
+            <div class="footer">
+                <a href="https://github.com/Godswill101"><i class="fab fa-github"></i> Dev. By Godswill101</a>
+            </div>
+        </div>
+        
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
